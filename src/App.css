@@ -32,7 +32,49 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@font-face {
+  font-family: "Babas";
+  /*Can be any text*/
+  src: local("Babas"),
+    url("./assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: local("CircularStd"),
+    url("./assets/fonts/CircularStd-Medium.ttf") format("truetype");
+}
+
+body {
+  width: 100%;
+  font-family: var(--capitals-font-family)
+}
+
+:root {
+  --purple: rgb(64, 70, 202);
+  --grey: rgba(112, 112, 112);
+  --white: #F9F9F9;
+  --black: #171923;
+
+  --background-color: var(--black);
+  --capitals-font-family: 'Babas', sans-serif;
+  --cursive-font-family: 'CircularStd', sans-serif;
+  --icon-color: var(--purple);
+  --text-color: var(--white);
+  --light-text-color: var(--white);
+  --navbar-background: var(--black);
+  --heading-font-size: 24px;
+  --sub-heading-font-size: 18px;
+  --border: solid var(--purple) 1px;
+  --progress-line-color: var(--purple);
+
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
